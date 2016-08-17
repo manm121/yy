@@ -1,48 +1,77 @@
 {% extends "layout.html" %}
 
 {% block body %}
-  <div class="blog-header">
-    Order Placement
-  </div>
+  <div class="blog-header"></div>
   <div class="row">
-    <div class="col-sm-8 blog-main">
-      <div class="blog-post">
 
-      </div><!-- /.blog-post -->
-    </div><!-- /.blog-main -->
-    <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-      <div class="sidebar-module sidebar-module-inset">
-        <h4>About</h4>
-        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+    <!-- order placement -->
+    <div class="col-lg-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading" ><i class="fa fa-credit-card" aria-hidden="true"></i>&nbsp;Order Placement</div>
+        <div class="panel-body">
+          1. choose from orders<br>
+          2. accept customer basic information <br>
+          3. place order<br>
+        </div>
       </div>
-      <div class="sidebar-module">
-        <h4>Archives</h4>
-        <ol class="list-unstyled">
-          <li><a href="#">March 2014</a></li>
-          <li><a href="#">February 2014</a></li>
-          <li><a href="#">January 2014</a></li>
-          <li><a href="#">December 2013</a></li>
-          <li><a href="#">November 2013</a></li>
-          <li><a href="#">October 2013</a></li>
-          <li><a href="#">September 2013</a></li>
-          <li><a href="#">August 2013</a></li>
-          <li><a href="#">July 2013</a></li>
-          <li><a href="#">June 2013</a></li>
-          <li><a href="#">May 2013</a></li>
-          <li><a href="#">April 2013</a></li>
-        </ol>
+    </div>
+
+    <!-- Capturing Customer Information -->
+    <div class="col-lg-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading" ><i class="fa fa-list-alt" aria-hidden="true"></i>&nbsp;Capturing Customer Information</div>
+        <div class="panel-body">
+          1. collect data received over a week<br>
+          2. Begin importing data into our system <br>
+          3. Address cleansing, validation, match<br>
+        </div>
       </div>
-      <div class="sidebar-module">
-        <h4>Elsewhere</h4>
-        <ol class="list-unstyled">
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-        </ol>
+    </div>
+
+    <!-- Data Segmentation -->
+    <div class="col-lg-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading" ><i class="fa fa-database" aria-hidden="true"></i>&nbsp;Data Segmentation</div>
+        <div class="panel-body">
+          1. add demographics attribute to the data<br>
+          2. export data in a summary form<br>
+          3. send data to market campaigning system<br>
+        </div>
       </div>
-    </div><!-- /.blog-sidebar -->
-  </div><!-- /.row -->
+    </div>
+
+    <!-- Marketing Campaign -->
+    <div class="col-lg-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading" ><i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;Marketing Campaign</div>
+        <div class="panel-body">
+          1. portrait capabilities<br><br><br>
+        </div>
+      </div>
+    </div>
+
+    <!-- Analytics -->
+    <div class="col-lg-4">
+      <div class="panel panel-danger">
+        <div class="panel-heading" ><i class="fa fa-area-chart" aria-hidden="true"></i>&nbsp;Analytics</div>
+        <div class="panel-body">
+          1. Relevant Trends<br>
+          2. Importing feedback of a history market campaign to further enrich data <br><br>
+        </div>
+      </div>
+    </div>
+
+  </div>
 {% endblock %}
+
+{% block individual %}
+  <div class="container-fluid">
+    <div class="blog-header">
+      <h1 class="blog-title">Designed to take teamwork to the next level</h1>
+    </div>
+  </div>
+{% endblock %}
+
 {% block footer %}
   <p>{}.</p>
   <p>

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 
-    <title>Privacy Analyzer - {% block title %}{% endblock %}</title>
+    <title>YUM Demo - {% block title %}{% endblock %}</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +13,7 @@
     <link rel="icon" href="../../favicon.ico">
     <link href="{{ url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet">
     <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css')}}" rel="stylesheet">
 
     {% block head %}{% endblock %}
 
@@ -31,9 +32,10 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container-fluid">
     {% block body %}{% endblock %}
   </div><!-- /.container -->
+  {% block individual %}{% endblock %}
   <footer class="blog-footer">
     {% block footer %}{% endblock %}
   </footer>
