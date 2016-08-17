@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>Privacy Analyzer - {% block title %}{% endblock %}</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="this site is about analyzing the  content of twitter handles in terms of postives and negatives">
+    <meta name="author" content="the almighty">
+
+    <link rel="icon" href="../../favicon.ico">
+    <link href="{{ url_for('static', filename='css/bootstrap.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/style.css')}}" rel="stylesheet">
+
+    {% block head %}{% endblock %}
+
+  </head>
+<body>
+  <div class="blog-masthead">
+    <div class="container">
+      <nav class="blog-nav">
+        <a class="blog-nav-item active" href="#">Home</a>
+        <a class="blog-nav-item" href="#">New features</a>
+        <a class="blog-nav-item" href="#">Press</a>
+        <a class="blog-nav-item" href="#">New hires</a>
+        <a class="blog-nav-item" href="#">About</a>
+        {% block topMenus %}{% endblock %}
+      </nav>
+    </div>
+  </div>
+
+  <div class="container">
+    {% block body %}{% endblock %}
+  </div><!-- /.container -->
+  <footer class="blog-footer">
+    {% block footer %}{% endblock %}
+  </footer>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-2.2.4.min.js') }}" ></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}" ></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/pv.js') }}" ></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>
