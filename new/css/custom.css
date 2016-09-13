@@ -1,0 +1,20 @@
+.portfolio-item .box{
+  background-color: #ffffff;
+  color: red;
+  height: 260px;
+  border: 1px solid #fcfcfc;
+  opacity: 0.75;
+}
+.portfolio-item .box:hover{
+    border: 1px solid #ccc;
+    box-shadow: 3px 2px 2px 1px #484747;
+}
+.portfolio-item .box .content{
+  color:#46a7e2;
+  margin-top:120px;
+  font-family: cursive;
+}
+  .portfolio-item .box .content span{
+    color:#46a7e2;
+
+  }
